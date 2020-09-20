@@ -1,0 +1,183 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.body-light {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.body-dark {
+  background-color: hsl(207, 26%, 17%);
+}
+
+
+#navigation {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0px 5%;
+}
+
+.navigation-light {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: rgba(0, 0, 0, 0.15) 0 0 4px;
+}
+
+.navigation-dark {
+  background-color: hsl(207, 26%, 17%);
+  box-shadow: rgba(0, 0, 0, 0.15) 0 0 4px;
+  color: hsl(0, 0%, 100%);
+}
+
+
+
+#navigation h1 {
+  text-align: left;
+}
+
+.light {
+  text-align: right;
+  color: black;
+  align-self: center;
+  text-decoration: none;
+}
+
+.light-remove {
+  display: none;
+}
+
+.light-show {
+  display: block;
+  color: #fff;
+}
+
+.dark {
+  text-align: right;
+  color: black;
+  align-self: center;
+  text-decoration: none;
+}
+
+.dark-show {
+  display: block;
+}
+
+.dark-remove {
+  display: none;
+}
+
+
+@media only screen and (max-width: 700px){
+  #navigation h1 {
+    text-align: left;
+    font-size: 26px;
+  }
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  padding: 20px 5%;
+}
+
+
+.header-light {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.header-dark {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+}
+
+.search {
+  text-align: left;
+  color: black;
+  align-self: center;
+  border-radius: 5px;
+  border-width: 0;
+  padding: 10px 10px;
+}
+
+.search-light {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+}
+
+.search-dark {
+  background-color: hsl(0, 0%, 52%);
+  color: hsl(0, 0%, 100%)
+}
+
+.filter {
+  text-align: right;
+  justify-self: right;
+  color: black;
+  width: 40%;
+  align-self: center;
+  border-radius: 5px;
+  border-width: 0;
+  padding: 10px 10px;
+}
+
+.filter-light {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+}
+
+.filter-dark {
+  background-color: hsl(0, 0%, 52%);
+  color: hsl(0, 0%, 100%)
+}
+
+
+@media only screen and (max-width: 700px){
+  #header {
+    grid-template-columns: 1fr;
+  }
+
+  .filter {
+    text-align: left;
+    justify-self: left;
+  }
+}
+
+
+#countries {
+  padding: 0 5%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.col {
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: rgba(0, 0, 0, 0.15) 0 0 8px;
+}
+
+.col img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.detail {
+  padding: 10px 15px;
+}
+
+@media only screen and (max-width: 700px){
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
